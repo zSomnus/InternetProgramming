@@ -1,0 +1,19 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{297143AB-5E29-4D0B-B6E4-46090E166FEE}"
+	ProjectSection(SolutionItems) = preProject
+		Gradient.html = Gradient.html
+		Shadow.html = Shadow.html
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5AA27F74-EAF9-4932-B470-5D95F132E6AD}
+	EndGlobalSection
+EndGlobal

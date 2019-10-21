@@ -179,3 +179,28 @@ footer .container{
     float: left;
     margin-left: 25px;
 }
+
+.menu-options a:hover{
+    color: #0077dc;
+}
+.menu-options a:active{
+    color: #f67dc6;
+}
+.menu-departments li ul{
+    display: none;
+}
+.menu-departments li:hover ul{
+    display: block;
+}
+.menu-departments ul ul li{
+    background-color: #dcdcdc;
+}
+.menu-departments li li a::before{
+    content: '\272A';
+    padding-right: 3px;
+}
+.panel h2::before{
+    content: '\2756';
+    padding-right: 5px;
+    opacity: 0.4;
+}

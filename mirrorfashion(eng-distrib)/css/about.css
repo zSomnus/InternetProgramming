@@ -59,3 +59,11 @@ p{
     margin: 0 45px 10px 10px;
     
 }
+
+p::first-letter{
+    font-weight: bold;
+}
+
+:not(p)+p::first-line{
+    font-variant: small-caps;
+}

@@ -1,0 +1,71 @@
+<head>
+    <meta charset="utf-8" />
+    <title>PseudoClass</title>
+    <style>
+        li:nth-child(2n+1){
+            background-color: brown;
+        }
+        li:first-child{
+            background-color: aqua;
+        }
+        li:nth-last-child(2n){
+            background-color: blueviolet;
+        }
+        li:last-child{
+            background-color: aquamarine;
+        }
+        li:last-child{
+            background-color: pink;
+        }
+        li:hover{
+            font-weight: bold;
+        }
+        a:link{
+            color: #333333;
+        }
+
+        a:hover{
+            color: #ff3333;
+        }
+        a:visited{
+            color: #3333ff;
+        }
+        a:active{
+            color: #33ff33;
+        }
+        li:hover::first-letter{
+            font-size: 200%;
+        }
+        a::before{
+            content: ">>";
+        }
+        a::after{
+            content: "<<";
+        }
+        li::selection{
+            font-size: 200%;
+            color: red;
+            background-color: whitesmoke;
+        }
+        li::selection::first-letter{
+            font-size: 200%;
+            color: red;
+            background-color: whitesmoke;
+            
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+        <li>Fourth item</li>
+        <li>Fifth item</li>
+
+    </ul>
+    <a href="#">First link</a> <br />
+    <a href="#">Second link</a> <br />
+    <a href="#">Third link</a> <br />
+    
+</body>
