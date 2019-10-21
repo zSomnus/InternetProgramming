@@ -1,0 +1,33 @@
+#square {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    top: 50px;
+    left: 50px;
+}
+
+#square-static{
+    position: static;
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    top: 50px;
+    left: 50px;
+}
+
+#square-relative{
+    position: relative;
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    top: 50px;
+    bottom: 50px;
+}
+
+#square-static{
+    position: static;
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    top: 50px;
+}
