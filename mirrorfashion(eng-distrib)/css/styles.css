@@ -147,7 +147,8 @@ footer{
     background-image: url(../img/background-footer.png);
     clear: both;
     padding: 20px 0;
-    width: 100%;
+    min-width: 940px;
+    /*width: 100%;*/
 }
 
 .social a{
