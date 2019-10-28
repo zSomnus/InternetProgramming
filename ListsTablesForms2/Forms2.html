@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        form {
+            position: relative
+        }
+
+        #name {
+            position: absolute;
+            left: 80px;
+        }
+
+        #pw {
+            position: absolute;
+            left: 80px;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="jquery.html">
+        <h3> Buttons</h3>
+        Name: <input id="name" type="text" name="user_name" size="8" value="your name" maxlength="20"><br>
+        Password: <input id="pw" type="password" name="user_pass" /><br />
+        <input type="button" onclick="alert('Hello')" name="b_alert" value="Say Hello" /><br>
+        <input type="submit" name="b_submit" value="Go to jQuery" />
+        <input type="reset" name="b_reset" value="Reset" /><br>
+    </form>
+</body>
+</html>
