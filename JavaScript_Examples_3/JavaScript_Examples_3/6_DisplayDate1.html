@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Date</title>
+    <script>
+        function displayDate() {
+            document.getElementById("demo").innerHTML = Date();          
+        }
+    </script>
+</head>
+<body>
+
+    <p>Click the button to display the date.</p>
+
+    <!--<button id="btn" onclick="displayDate()">?</button>-->
+    <button id="btn">?</button> <br />
+    <button id="btn2">?</button> <br />
+    <button onclick="document.getElementById('demo').innerHTML = ''">Clear</button>
+
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("btn").innerHTML = "The time is?";
+        document.getElementById("btn").addEventListener("click", displayDate, false);
+
+        document.getElementById("btn2").onmouseover = () => { document.getElementById("btn2").innerHTML = "The time is?" };
+        document.getElementById("btn2").onmouseout  = () => { document.getElementById("btn2").innerHTML = "?" };
+        document.getElementById("btn2").onclick = displayDate; 
+    </script>
+
+
+
+</body>
+</html>

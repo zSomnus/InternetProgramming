@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JS Arrays</title>
+    <script>
+        function myF1(){
+            var txt = "";
+            var numbers = [45, 4, 9, 16, 25];
+            numbers.forEach(myFunction);
+            function myFunction(value) {
+                txt = txt + value + "<br>";
+            }
+            return txt;
+        }
+        function myF2(){
+            var txt = "";
+            var numbers = [45, 4, 9, 16, 25];
+            numbers.forEach((value) => {
+                txt = txt + value + "<br>";
+            });
+            return txt;
+        }
+        function myF3() {
+            var arr = new Array();
+            var numbers = [45, 4, 9, 16, 25];
+            numbers.forEach((value, index) => {
+                arr[index] = 2* value;
+            });
+            return arr;
+        }
+        function myF4() {           
+            var numbers = [45, 4, 9, 16, 25];
+            var arr = numbers.map((value) => {
+                return  2 * value;
+            });
+            return arr;
+        }
+        function myF5() {
+            var numbers = [45, 4, 9, 16, 25];
+            var over18 = numbers.filter((value) => {
+                return value > 18;
+            });
+            return over18          
+        }
+        function changeId1(x) {
+            document.getElementById("id1").innerHTML += " "+ x + "<br>";
+        }        
+    </script>
+</head>
+<body>
+    <p id="id1">Result : <br /></p>
+
+    <input type="button" onclick="changeId1(myF1())" value="myF1()" /> <br />
+    <input type="button" onclick="changeId1(myF2())" value="myF2()" /> <br />
+    <input type="button" onclick="changeId1(myF3())" value="myF3()" /> <br />
+    <input type="button" onclick="changeId1(myF4())" value="myF4()" /> <br />
+    <input type="button" onclick="changeId1(myF5())" value="myF5()" /> <br />
+
+
+
+
+</body>
+</html>

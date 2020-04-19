@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JS Comparison</title>
+</head>
+<body>
+
+    <p id="id1">Initial text</p>
+
+    <script>   
+        let w = 'Tests: <br>';
+        
+        if (NaN == NaN) { w = w + "NaN==NaN is true<br>"; }
+        else { w = w + "NaN==NaN is false<br>"; }
+
+        if (NaN === NaN) { w = w + "and NaN===Nan is true<br>"; }
+        else { w = w + "NaN===NaN is false<br>"; }
+       
+        if (false == 0) { w = w + "false==0 is true<br>"; }
+        else { w = w + "false==0 is false<br>"; }
+
+        if (false === 0) { w = w + "false===0 is true<br>"; }
+        else { w = w + "false===0 is false<br>"; }
+
+        if (false == '') { w = w + "false=='' is true<br>"; }
+        else { w = w + "false=='' is false<br>"; }
+
+        if (false === '') { w = w + "false==='' is true<br>"; }
+        else { w = w + "false==='' is false<br>"; }
+
+        if (0 == '') { w = w + "0=='' is true<br>"; }
+        else { w = w + "0=='' is false<br>"; }
+
+        if (0 === '') { w = w + "0==='' is true<br>"; }
+        else { w = w + "0==='' is false<br>"; }
+
+        if (undefined == null) { w = w + "undefined == null is true<br>"; }
+        else { w = w + "undefined == null is false<br>"; }
+
+        if (undefined === null) { w = w + "undefined === null is true<br>"; }
+        else { w = w + "undefined === null is false<br>"; }
+
+        if (0 == null) { w = w + "0 == null is true<br>"; }
+        else { w = w + "0 == null is false<br>"; }
+
+        if (0 === null) { w = w + "0 === null is true<br>"; }
+        else { w = w + "0 === null is false<br>"; }
+
+        if ('' == null) { w = w + "'' == null is true<br>"; }
+        else { w = w + "'' == null is false<br>"; }
+
+        if ('' === null) { w = w + "'' === null is true<br>"; }
+        else { w = w + "'' === null is false<br>"; }
+
+        if (false == null) { w = w + "false == null is true<br>"; }
+        else { w = w + "false == null is false<br>"; }
+
+        if (false === null) { w = w + "false === null is true<br>"; }
+        else { w = w + "false === null is false<br>"; }
+
+        if (true == null) { w = w + "true == null is true<br>"; }
+        else { w = w + "true == null is false<br>"; }
+
+        if (true === null) { w = w + "true === null is true<br>"; }
+        else { w = w + "true === null is false<br>"; }
+
+        if (null) { w = w + "null is treated as true<br>"; }
+        else { w = w + "null is treated as false<br>"; }
+
+        if (!(null)) { w = w + "!(null) is treated as true<br>"; }
+        else { w = w + "!(null) is treated as false<br>"; }
+
+        if (undefined) { w = w + "undefined is treated as true<br>"; }
+        else { w = w + "undefined is treated as false<br>"; }
+
+        if (!(undefined)) { w = w + "!(undefined) is treated as true<br>"; }
+        else { w = w + "!(undefined) is treated as false<br>"; }
+
+        if (0) { w = w + "0 is treated as true<br>"; }
+        else { w = w + "0 is treated as false<br>"; }
+
+        if ('') { w = w + "'' is treated as true<br>"; }
+        else { w = w + "'' is treated as false<br>"; }
+
+        if (NaN) { w = w + "NaN is treated as true<br>"; }
+        else { w = w + "NaN is treated as false<br>"; }
+
+        document.getElementById("id1").innerHTML = w;
+    </script>
+
+</body>
+</html>
